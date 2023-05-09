@@ -34,13 +34,24 @@ background: linear-gradient(90deg, rgba(1,6,24,1) 0%, rgba(232,233,240,1) 0%, rg
 }
 
 .timer h2 {
-    padding-bottom: 20px;
-    border-bottom: 2px solid rgb(80, 80, 80);
+    position: relative;
+}
+
+.timer h2::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(42, 52, 86);
+    height: 1px;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(85, 85, 85);
 }
 
 .time {
     display: flex;
     justify-content: space-around;
+    margin-top: 40px;
 }
 
 .time span {
